@@ -1,10 +1,68 @@
 :root{
   --primary-color: #D23166;
+  --btn-hover: #d31454;
   --secondary-color: #F8EDF0;
   --text-color: #150101;
   --black: #000;
   --white: #fff;
   --link-hover: #D23166;
+  --btncolor: #FAFAFA;
+}
+/* fredoka-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/fredoka-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hind-madurai-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/hind-madurai-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hind-madurai-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/hind-madurai-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hind-madurai-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Hind Madurai';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/hind-madurai-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 *.
 *::after.
@@ -17,6 +75,11 @@
   width: 1120px;
   margin: 0 auto;
 }
+/* header styles */
+/* nav  */
+.header{
+  background-color: #f2ceda53;
+}
 .header__container{
   display: flex;
   flex-direction: column;
@@ -25,6 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 52px;
 }
 .sitelogo{
   display: flex;
@@ -48,4 +112,49 @@
 }
 .nav__link{
   color: var(--text-color);
+}
+.btn{
+  padding: 14px 50px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--btncolor);
+  font-family: 'Hind Madurai';
+  font-size: 16px;
+  font-weight: 700;
+}
+.btn:hover{
+  background-color: var(--btn-hover);
+}
+
+/* hero styles */
+.hero-container{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+.subtitle{
+  color: #0F0101;
+  font-family: 'Roboto',sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  padding-bottom: 6px;
+}
+.hero__title{
+  color: #0F0101;
+  font-family: 'Fredoka',sans-serif;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  padding-bottom: 35px; 
+}
+.hero__content{
+  font-family: 'Hind Madurai';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 50px;
+}
+.hero img{
+  display: flex;
+  margin-bottom: 5px;
 }
