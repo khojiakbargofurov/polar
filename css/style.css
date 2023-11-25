@@ -353,10 +353,10 @@
 .form-one{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: endgit;
 }
 input{
-  width: 637px;
+  width: 503px;
   height: 74px;
   border-radius: 5px;
   background-color: #FAFAFA;
