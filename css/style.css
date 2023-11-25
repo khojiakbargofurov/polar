@@ -104,14 +104,14 @@
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 400;
-
 }
 .nav__link:hover{
   color: var(--link-hover);
-
+  
 }
 .nav__link{
   color: var(--text-color);
+  padding: 20px 0;
 }
 .btn{
   padding: 14px 50px;
@@ -121,9 +121,12 @@
   font-family: 'Hind Madurai';
   font-size: 16px;
   font-weight: 700;
+  box-shadow: none;
+  border: 1px solid transparent;
 }
 .btn:hover{
   background-color: var(--btn-hover);
+  cursor: pointer;
 }
 
 /* hero styles */
@@ -157,4 +160,216 @@
 .hero img{
   display: flex;
   margin-bottom: 5px;
+}
+/* main section styles */
+/* features styles*/
+
+.features__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;  
+  justify-content: space-between;
+  text-align: center;
+  padding: 100px 0 ;
+}
+.features-item {
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features-item:hover{
+  background-color: #fff;
+  box-shadow: 20px 20px 50px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.features__img {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  padding:33px 0 24px;
+}
+.features__title {
+  color: var(--black);
+  font-family: 'Hind Madurai';
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 9px;  
+}
+.features__content {
+  color: var(--black);
+  font-family: 'Hind Madurai';
+  font-size: 14px;
+  font-weight: 400;
+  padding:0 26px 28px;
+}
+/* info section styles */
+.info-section{
+  background-color: var(--secondary-color);
+}
+.info-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 137px;
+}
+.info-title {
+  color: var(--text-color);
+  font-family: 'Hind Madurai';
+  font-size: 44.2px;  
+  font-weight: 600;
+  line-height: 110.5%;
+  padding-bottom: 16px;
+}
+.info-description {
+  color: var(--text-color);
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.info__img {
+  /* position: absolute; */
+  max-width: 550px;
+  background-color: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  right: -100px;
+}
+/* product section */
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+.h2{
+
+}
+.product-m-title {  
+  color: var(--text-color);
+  font-family: 'Hind Madurai';
+  font-size: 44.2px;
+  font-weight: 600;
+  padding-bottom: 64px;
+}
+.product-list {
+  display: flex;
+  gap: 40px;
+}
+.product-item {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 100px;
+}
+.product-link {
+  color: var(--black);
+  opacity: 0.6;
+  padding: 20px 0 0;
+}
+.product-link:hover{
+  color: var(--black);
+  opacity: 100%;
+  border-bottom: 3px solid #D64374;
+}
+.bread {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px; 
+  padding-bottom: 100px; 
+
+}
+.product__img {
+  max-width: 400px;
+}
+.product-title {
+  color: var(--black);
+  font-family: 'Hind Madurai';
+  font-size: 26px;
+  font-weight: 700;
+  padding-bottom: 11px;
+}
+.product-content {
+  color: var(--black);
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.7;
+  padding-bottom: 28px; 
+}
+.price {
+  color: var(--black);
+  font-family: "Hind Madurai";
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration-line: strikethrough;
+  opacity: 0.7;
+  padding-bottom: 16px;
+}
+.price span {
+  color: var(--black);
+  font-family: 'Hind Madurai';
+  font-size: 26px;
+  font-weight: 500;
+  opacity: 100%;
+}
+.chocolate {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+  padding-bottom: 100px;
+}
+.sweet-corn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+  padding-bottom: 100px;
+}
+.form {
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.form-title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 500;
+  padding-bottom: 28px;
+}
+.form-one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  width: 637px;
+  height: 74px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  border: none;
+  color: #0F0000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 29px 140px 29px 30px;  
+}
+.form button {
+  height: 74px;
+ position: absolute;
+  border: radius 5px;
 }
